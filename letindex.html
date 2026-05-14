@@ -1,0 +1,1710 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gilgal Vibes Incorporated</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="letstyle.css" />
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        emailjs.init({ publicKey: "rBQ167rJoiQ2j06sg" });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- ═══════ NAVBAR ═══════ -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" onclick="showPage('home')">
+          <span class="logo-g">G</span>ILGAL <span class="logo-v">VIBES</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('sound')">Sound</a></li>
+          <li><a href="#" onclick="showPage('band')">Live Band</a></li>
+          <li><a href="#" onclick="showPage('downloads')">Downloads</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+        <button class="nav-cta" onclick="showPage('booking')">Book Now</button>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a
+          href="#"
+          onclick="
+            showPage('home');
+            toggleMenu();
+          "
+          >Home</a
+        >
+        <a
+          href="#"
+          onclick="
+            showPage('sound');
+            toggleMenu();
+          "
+          >Sound Rental</a
+        >
+        <a
+          href="#"
+          onclick="
+            showPage('band');
+            toggleMenu();
+          "
+          >Live Band</a
+        >
+        <a
+          href="#"
+          onclick="
+            showPage('downloads');
+            toggleMenu();
+          "
+          >Downloads</a
+        >
+        <a
+          href="#"
+          onclick="
+            showPage('contact');
+            toggleMenu();
+          "
+          >Contact</a
+        >
+        <a
+          href="#"
+          onclick="
+            showPage('booking');
+            toggleMenu();
+          "
+          class="mobile-cta"
+          >Book Now</a
+        >
+      </div>
+    </nav>
+
+    <!-- ═══════ PAGE: HOME ═══════ -->
+    <div id="page-home" class="page active">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb1"></div>
+          <div class="hero-orb orb2"></div>
+          <div class="hero-orb orb3"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span class="dot"></span> Lagos, Nigeria &nbsp;·&nbsp; Est. Since
+            Day One
+          </p>
+          <h1 class="hero-title">
+            <span class="line1">GILGAL</span>
+            <span class="line2"><em>Vibes</em></span>
+            <span class="line3">INCORPORATED</span>
+          </h1>
+          <p class="hero-sub">
+            Premium Sound. Live Energy. Unforgettable Moments.
+          </p>
+          <div class="hero-btns">
+            <button class="btn-primary" onclick="showPage('booking')">
+              <i class="fa-solid fa-calendar-check"></i> Book a Date
+            </button>
+            <button class="btn-ghost" onclick="showPage('band')">
+              <i class="fa-solid fa-play"></i> See What We Do
+            </button>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <span>scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services-section">
+        <p class="section-tag">What We Offer</p>
+        <h2 class="section-title">Two Services.<br />One Standard.</h2>
+        <div class="services-grid">
+          <div class="service-card" onclick="showPage('sound')">
+            <div class="service-icon">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <div class="service-num">01</div>
+            <h3>Sound System Rental</h3>
+            <p>
+              Professional-grade speakers, mixers, and full PA setups for events
+              of any size. We deliver, set up, and handle everything.
+            </p>
+            <div class="service-link">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-card featured" onclick="showPage('band')">
+            <div class="service-badge">Most Booked</div>
+            <div class="service-icon"><i class="fa-solid fa-guitar"></i></div>
+            <div class="service-num">02</div>
+            <h3>Live Band & Gigs</h3>
+            <p>
+              High-energy live performances for weddings, parties, corporate
+              events, and concerts. We bring the stage to you.
+            </p>
+            <div class="service-link">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-card" onclick="showPage('downloads')">
+            <div class="service-icon"><i class="fa-solid fa-download"></i></div>
+            <div class="service-num">03</div>
+            <h3>Show Downloads</h3>
+            <p>
+              Missed the recording? Get the audio or video of your event
+              delivered directly to you as a private download.
+            </p>
+            <div class="service-link">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats-section">
+        <div class="stats-inner">
+          <div class="stat">
+            <span class="stat-num">500<span class="gold">+</span></span>
+            <span class="stat-label">Events Powered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10<span class="gold">+</span></span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100<span class="gold">%</span></span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">24<span class="gold">/7</span></span>
+            <span class="stat-label">Available Support</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us -->
+      <section class="why-section">
+        <div class="why-left">
+          <p class="section-tag">Why Gilgal Vibes</p>
+          <h2 class="section-title">
+            We Don't Just Show Up.<br />We Show Out.
+          </h2>
+          <p class="why-body">
+            Every event is personal. Whether it's your wedding, your concert, or
+            your corporate night — we treat it like it's our own. Punctual,
+            professional, and passionate about sound.
+          </p>
+          <button class="btn-primary" onclick="showPage('booking')">
+            Book Us Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="why-right">
+          <div class="why-item">
+            <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Always On Time</h4>
+              <p>
+                We arrive before your guests do. Setup is done quietly and
+                professionally.
+              </p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fa-solid fa-sliders"></i></div>
+            <div>
+              <h4>Premium Equipment</h4>
+              <p>
+                Top-tier PA systems, subwoofers, stage monitors, and DJ
+                consoles.
+              </p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fa-solid fa-music"></i></div>
+            <div>
+              <h4>Live Energy</h4>
+              <p>
+                Our band reads the room and keeps the energy exactly where it
+                needs to be.
+              </p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <h4>Fully Insured</h4>
+              <p>
+                All equipment and events are covered. Your peace of mind is our
+                priority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials-section">
+        <p class="section-tag">Client Love</p>
+        <h2 class="section-title">They Said It Best.</h2>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Gilgal Vibes made our wedding night absolutely unforgettable. The
+              sound was crystal clear, the band had everyone on the dance floor
+              all night."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">AO</div>
+              <div>
+                <strong>Adaeze Okonkwo</strong>
+                <span>Wedding — Lagos</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card featured-testi">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "We hired them for our company's anniversary event. Professional
+              from start to finish. The sound quality was next level — even our
+              CEO was impressed."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">BM</div>
+              <div>
+                <strong>Babatunde Martins</strong>
+                <span>Corporate Event — Abuja</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Quick booking, great communication, arrived early. The live band
+              was incredible — we're already planning our next event with Gilgal
+              Vibes."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">CN</div>
+              <div>
+                <strong>Chisom Nwosu</strong>
+                <span>Birthday Party — Port Harcourt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-banner">
+        <div class="cta-content">
+          <h2>Ready to Make Some Noise?</h2>
+          <p>Check availability and book your date in minutes.</p>
+          <button class="btn-primary large" onclick="showPage('booking')">
+            <i class="fa-solid fa-calendar-check"></i> Check Availability
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ═══════ PAGE: SOUND RENTAL ═══════ -->
+    <div id="page-sound" class="page">
+      <div class="page-hero short">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb2"></div>
+        </div>
+        <div class="page-hero-content">
+          <p class="hero-eyebrow"><span class="dot"></span> Service 01</p>
+          <h1>Sound System<br /><em>Rental</em></h1>
+          <p>Professional audio for events of every size.</p>
+        </div>
+      </div>
+
+      <section class="inner-section">
+        <p class="section-tag">Our Equipment</p>
+        <h2 class="section-title">What's in the Rig</h2>
+        <div class="equipment-grid">
+          <div class="equip-card">
+            <i class="fa-solid fa-volume-high"></i>
+            <h4>PA Speakers</h4>
+            <p>
+              Line arrays and powered tops for crisp highs and clear mids across
+              large venues.
+            </p>
+          </div>
+          <div class="equip-card">
+            <i class="fa-solid fa-wave-square"></i>
+            <h4>Subwoofers</h4>
+            <p>
+              18" and 21" subs that deliver deep, powerful bass felt across the
+              entire venue.
+            </p>
+          </div>
+          <div class="equip-card">
+            <i class="fa-solid fa-sliders"></i>
+            <h4>Digital Mixer</h4>
+            <p>
+              32-channel digital desk with full EQ and effects processing for
+              studio-quality live sound.
+            </p>
+          </div>
+          <div class="equip-card">
+            <i class="fa-solid fa-microphone"></i>
+            <h4>Microphones</h4>
+            <p>
+              Shure SM58 wired and wireless handhelds, lapel mics, and drum
+              overheads.
+            </p>
+          </div>
+          <div class="equip-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>Stage Monitors</h4>
+            <p>
+              On-stage wedge monitors so performers always hear themselves
+              perfectly.
+            </p>
+          </div>
+          <div class="equip-card">
+            <i class="fa-solid fa-plug"></i>
+            <h4>Full Rigging</h4>
+            <p>
+              All cables, stands, power distribution, and support equipment
+              included.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section">
+        <p class="section-tag">Our Sets</p>
+        <h2 class="section-title">What We Bring To Your Event</h2>
+        <div class="sets-grid">
+          <!-- CARD 1 — Half Set A -->
+          <div class="set-card">
+            <div class="set-media">
+              <video autoplay muted loop playsinline>
+                <source src="half set .mp4" type="video/mp4" />
+              </video>
+              <span class="set-live-badge">● LIVE PREVIEW</span>
+            </div>
+            <div class="set-body">
+              <p class="set-label">Half Set</p>
+              <h3 class="set-name">2 Subs + 3 Monitor</h3>
+              <p class="set-desc">
+                A powerful half set configuration — 2 subwoofers for deep bass
+                coverage and 3 stage monitors so every performer stays locked
+                in. Great for medium events and indoor shows.
+              </p>
+              <ul class="set-features">
+                <li><i class="fa-solid fa-check"></i> PA Speaker</li>
+                <li><i class="fa-solid fa-check"></i> 2× Subwoofers</li>
+                <li><i class="fa-solid fa-check"></i> 3× Stage Monitors</li>
+                <li><i class="fa-solid fa-check"></i> Digital Mixer</li>
+                <li><i class="fa-solid fa-check"></i> Wireless Microphones</li>
+                <li><i class="fa-solid fa-check"></i> Setup &amp; Teardown</li>
+              </ul>
+              <p class="set-quote">
+                <i class="fa-solid fa-comment-dots"></i> Contact us for
+                availability &amp; quote
+              </p>
+              <button class="btn-ghost full" onclick="showPage('booking')">
+                Book This Set
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 — Half Set B -->
+          <div class="set-card">
+            <div class="set-media">
+              <video autoplay muted loop playsinline>
+                <source src="half set .mp4" type="video/mp4" />
+              </video>
+              <span class="set-live-badge">● LIVE PREVIEW</span>
+            </div>
+            <div class="set-body">
+              <p class="set-label">Half Set</p>
+              <h3 class="set-name">2 Monitor + 1 F.O.H</h3>
+              <p class="set-desc">
+                Half set with a dedicated Front-of-House monitor — 2 stage
+                monitors for performers plus 1 FOH for the sound engineer. Ideal
+                for smaller concerts, church programs, and intimate events.
+              </p>
+              <ul class="set-features">
+                <li><i class="fa-solid fa-check"></i> PA Speaker</li>
+                <li><i class="fa-solid fa-check"></i> Subwoofer</li>
+                <li><i class="fa-solid fa-check"></i> 2× Stage Monitors</li>
+                <li><i class="fa-solid fa-check"></i> 1× F.O.H Monitor</li>
+                <li><i class="fa-solid fa-check"></i> Digital Mixer</li>
+                <li><i class="fa-solid fa-check"></i> Wireless Microphones</li>
+              </ul>
+              <p class="set-quote">
+                <i class="fa-solid fa-comment-dots"></i> Contact us for
+                availability &amp; quote
+              </p>
+              <button class="btn-ghost full" onclick="showPage('booking')">
+                Book This Set
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 — Full Set 3 Monitor -->
+          <div class="set-card">
+            <div class="set-media">
+              <video autoplay muted loop playsinline>
+                <source src="full set. 3 monitor .mp4" type="video/mp4" />
+              </video>
+              <span class="set-live-badge">● LIVE PREVIEW</span>
+            </div>
+            <div class="set-body">
+              <p class="set-label">Full Set</p>
+              <h3 class="set-name">3 Monitor</h3>
+              <p class="set-desc">
+                A complete full setup with 3 stage monitors for precise sound
+                control — ideal for concerts, church programs, weddings, and any
+                event where performers need to hear themselves clearly.
+              </p>
+              <ul class="set-features">
+                <li>
+                  <i class="fa-solid fa-check"></i> Full Speaker Pillar Arrays
+                </li>
+                <li><i class="fa-solid fa-check"></i> Subwoofer Stack</li>
+                <li><i class="fa-solid fa-check"></i> 3× Stage Monitors</li>
+                <li><i class="fa-solid fa-check"></i> Digital Mixer</li>
+                <li><i class="fa-solid fa-check"></i> Wireless Microphones</li>
+                <li><i class="fa-solid fa-check"></i> Setup &amp; Teardown</li>
+              </ul>
+              <p class="set-quote">
+                <i class="fa-solid fa-comment-dots"></i> Contact us for
+                availability &amp; quote
+              </p>
+              <button class="btn-ghost full" onclick="showPage('booking')">
+                Book This Set
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 — Full Set 3 Pillar 4 Monitor (featured) -->
+          <div class="set-card set-card-featured">
+            <div class="set-top-badge">Most Booked</div>
+            <div class="set-media">
+              <!-- <video autoplay muted loop playsinline> -->
+              <!-- <source src="full set .jpeg" type="video/mp4" /> -->
+              <!-- </video> -->
+              <img
+                src="full set .jpeg"
+                alt="Full Set 3 Pillar 4 Monitor"
+                style="width: 100%; height: auto; border-radius: 8px"
+              />
+              <span class="set-live-badge">● LIVE PREVIEW</span>
+            </div>
+            <div class="set-body">
+              <p class="set-label">Full Set</p>
+              <h3 class="set-name">3 Pillar, 4 Monitor</h3>
+              <p class="set-desc">
+                Our most popular rig — 3 speaker pillar arrays with 4 dedicated
+                stage monitors. Delivers powerful, evenly spread sound across
+                large venues. The go-to choice for big outdoor events and
+                corporate shows.
+              </p>
+              <ul class="set-features">
+                <li>
+                  <i class="fa-solid fa-check"></i> 3× Full Speaker Pillar
+                  Arrays
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Multiple Subwoofer Arrays
+                </li>
+                <li><i class="fa-solid fa-check"></i> 4× Stage Monitors</li>
+                <li>
+                  <i class="fa-solid fa-check"></i> 32-Channel Digital Mixer
+                </li>
+                <li><i class="fa-solid fa-check"></i> Wireless Microphones</li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Sound Engineer Included
+                </li>
+              </ul>
+              <p class="set-quote">
+                <i class="fa-solid fa-comment-dots"></i> Contact us for
+                availability &amp; quote
+              </p>
+              <button class="btn-primary full" onclick="showPage('booking')">
+                Book This Set
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 5 — Full Set 5 Monitor + Floor Monitor -->
+          <div class="set-card">
+            <div class="set-media">
+              <video autoplay muted loop playsinline>
+                <source src="full set .5 monitor .mp4" type="video/mp4" />
+              </video>
+              <span class="set-live-badge">● LIVE PREVIEW</span>
+            </div>
+            <div class="set-body">
+              <p class="set-label">Full Set</p>
+              <h3 class="set-name">5 Monitor + Floor Monitor</h3>
+              <p class="set-desc">
+                Our premium configuration — 5 stage monitors plus a dedicated
+                floor monitor for complete on-stage coverage. Every performer
+                hears exactly what they need. Built for full live bands and
+                high-demand productions.
+              </p>
+              <ul class="set-features">
+                <li>
+                  <i class="fa-solid fa-check"></i> Full Speaker Pillar F.O.H
+                </li>
+                <li><i class="fa-solid fa-check"></i> Full Subwoofer Stack</li>
+                <li><i class="fa-solid fa-check"></i> 5× Stage Monitors</li>
+                <li>
+                  <i class="fa-solid fa-check"></i> 1× Dedicated Floor Monitor
+                </li>
+                <li><i class="fa-solid fa-check"></i> F.O.H Console</li>
+                <li><i class="fa-solid fa-check"></i> Full Production Crew</li>
+              </ul>
+              <p class="set-quote">
+                <i class="fa-solid fa-comment-dots"></i> Contact us for
+                availability &amp; quote
+              </p>
+              <button class="btn-ghost full" onclick="showPage('booking')">
+                Book This Set
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="cta-content">
+          <h2>Need a Custom Setup?</h2>
+          <p>Tell us about your event and we'll build the perfect package.</p>
+          <button class="btn-primary large" onclick="showPage('booking')">
+            Request a Quote
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ═══════ PAGE: LIVE BAND ═══════ -->
+    <div id="page-band" class="page">
+      <div class="page-hero short">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb1"></div>
+          <div class="hero-orb orb3"></div>
+        </div>
+        <div class="page-hero-content">
+          <p class="hero-eyebrow"><span class="dot"></span> Service 02</p>
+          <h1>Live Band<br /><em>&amp; Gigs</em></h1>
+          <p>We bring the stage. You bring the crowd.</p>
+        </div>
+      </div>
+
+      <section class="inner-section">
+        <p class="section-tag">The Experience</p>
+        <h2 class="section-title">Pure Live Energy</h2>
+        <div class="band-intro">
+          <div class="band-text">
+            <p>
+              Gilgal Vibes is not just a sound company — we perform. Our live
+              band covers everything from Afrobeats and Highlife to Gospel, R&B,
+              and contemporary worship. We read the room, follow the energy, and
+              keep the crowd moving from the first note to the last song.
+            </p>
+            <p style="margin-top: 16px">
+              Whether you need a full band for your wedding reception or a solo
+              set for a corporate dinner, we bring professionalism and passion
+              to every performance.
+            </p>
+          </div>
+          <div class="band-genres">
+            <div class="genre-tag">Afrobeats</div>
+            <div class="genre-tag">Highlife</div>
+            <div class="genre-tag">Gospel</div>
+            <div class="genre-tag">R&B / Soul</div>
+            <div class="genre-tag">Fuji</div>
+            <div class="genre-tag">Juju</div>
+            <div class="genre-tag">Pop</div>
+            <div class="genre-tag">Worship</div>
+            <div class="genre-tag">Jazz</div>
+            <div class="genre-tag">Reggae</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inner-section dark-bg">
+        <p class="section-tag">Event Types</p>
+        <h2 class="section-title">Where We Perform</h2>
+        <div class="events-grid">
+          <div class="event-type">
+            <i class="fa-solid fa-rings-wedding"></i>
+            <h4>Weddings</h4>
+            <p>
+              From the ceremony to the last dance, we set the perfect tone for
+              your special day.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h4>Private Parties</h4>
+            <p>
+              Birthdays, anniversaries, house parties — we turn them into nights
+              to remember.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Corporate Events</h4>
+            <p>
+              Classy, professional performances for product launches, galas, and
+              award nights.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-church"></i>
+            <h4>Church Programs</h4>
+            <p>
+              Powerful worship sets and gospel performances for crusades and
+              special services.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-star"></i>
+            <h4>Concerts</h4>
+            <p>
+              Full concert support — opening acts, closing sets, full headline
+              performances.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-utensils"></i>
+            <h4>Dinner Shows</h4>
+            <p>
+              Sophisticated background music and live sets that elevate dining
+              experiences.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-dove"></i>
+            <h4>Burial Ceremonies</h4>
+            <p>
+              Respectful, heartfelt performances that honour and celebrate a
+              life well lived.
+            </p>
+          </div>
+          <div class="event-type">
+            <i class="fa-solid fa-baby"></i>
+            <h4>Child Dedications</h4>
+            <p>
+              Joyful worship and live music sets to bless and celebrate new
+              life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section">
+        <p class="section-tag">Performance Packages</p>
+        <h2 class="section-title">Pick Your Experience</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-tier">Solo / Duo Set</div>
+            <p class="price-desc">
+              Intimate solo or duo performance — perfect for dinners, lounges,
+              and small private events.
+            </p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i> 1–2 hour set</li>
+              <li>
+                <i class="fa-solid fa-check"></i> Acoustic or backing track
+              </li>
+              <li><i class="fa-solid fa-check"></i> Own sound system</li>
+              <li><i class="fa-solid fa-check"></i> Custom setlist</li>
+            </ul>
+            <p class="quote-note">
+              <i class="fa-solid fa-comment-dots"></i> Contact us for
+              availability & quote
+            </p>
+            <button class="btn-ghost full" onclick="showPage('booking')">
+              Book This
+            </button>
+          </div>
+
+          <div class="price-card featured-price">
+            <div class="price-badge">Most Booked</div>
+            <div class="price-tier">Full Live Band</div>
+            <p class="price-desc">
+              The full Gilgal Vibes experience. A complete band for weddings,
+              parties, and corporate events.
+            </p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i> 5–7 piece band</li>
+              <li><i class="fa-solid fa-check"></i> 2–3 hour performance</li>
+              <li><i class="fa-solid fa-check"></i> Full PA system included</li>
+              <li><i class="fa-solid fa-check"></i> Rehearsal session</li>
+              <li><i class="fa-solid fa-check"></i> Custom setlist</li>
+            </ul>
+            <p class="quote-note">
+              <i class="fa-solid fa-comment-dots"></i> Contact us for
+              availability & quote
+            </p>
+            <button class="btn-primary full" onclick="showPage('booking')">
+              Book This
+            </button>
+          </div>
+
+          <div class="price-card">
+            <div class="price-tier">All Night Coverage</div>
+            <p class="price-desc">
+              Full night of live music — multiple sets, DJ transitions, and MC
+              services available.
+            </p>
+            <ul class="price-list">
+              <li><i class="fa-solid fa-check"></i> Multiple set rotations</li>
+              <li><i class="fa-solid fa-check"></i> DJ transitions</li>
+              <li><i class="fa-solid fa-check"></i> MC services available</li>
+              <li><i class="fa-solid fa-check"></i> Full production</li>
+            </ul>
+            <p class="quote-note">
+              <i class="fa-solid fa-comment-dots"></i> Contact us for
+              availability & quote
+            </p>
+            <button class="btn-ghost full" onclick="showPage('contact')">
+              Get a Quote
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="inner-section">
+        <p class="section-tag">Watch Us Live</p>
+        <h2 class="section-title">See The Energy For Yourself</h2>
+        <p
+          style="
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: -32px;
+            margin-bottom: 40px;
+            max-width: 600px;
+          "
+        >
+          Follow us on TikTok
+          <a
+            href="https://www.tiktok.com/@gilgalvibesband"
+            target="_blank"
+            style="color: var(--gold)"
+            >@gilgalvibesband</a
+          >
+          to see live performances, setups, and behind-the-scenes moments.
+        </p>
+        <div class="tiktok-grid">
+          <div class="tiktok-card">
+            <blockquote
+              class="tiktok-embed"
+              cite="https://www.tiktok.com/@gilgalvibesband"
+              data-unique-id="gilgalvibesband"
+              data-embed-type="creator"
+              style="max-width: 100%; min-width: 288px"
+            ></blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div class="tiktok-follow-card">
+            <div class="tiktok-follow-inner">
+              <i
+                class="fa-brands fa-tiktok"
+                style="
+                  font-size: 48px;
+                  color: var(--gold);
+                  margin-bottom: 20px;
+                  display: block;
+                "
+              ></i>
+              <h3
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-size: 28px;
+                  color: var(--white);
+                  margin-bottom: 12px;
+                  font-weight: 700;
+                "
+              >
+                @gilgalvibesband
+              </h3>
+              <p
+                style="
+                  font-size: 14px;
+                  color: var(--muted);
+                  line-height: 1.75;
+                  margin-bottom: 28px;
+                "
+              >
+                Watch full live performances, sound setups, and event
+                highlights. New videos posted regularly.
+              </p>
+              <a
+                href="https://www.tiktok.com/@gilgalvibesband"
+                target="_blank"
+                class="btn-primary"
+              >
+                <i class="fa-brands fa-tiktok"></i> Follow on TikTok
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="cta-content">
+          <h2>Let's Make Your Event Legendary.</h2>
+          <p>Fill in a few details and we'll confirm your date.</p>
+          <button class="btn-primary large" onclick="showPage('booking')">
+            Book the Band
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ═══════ PAGE: DOWNLOADS ═══════ -->
+    <div id="page-downloads" class="page">
+      <div class="page-hero short">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb2"></div>
+          <div class="hero-orb orb3"></div>
+        </div>
+        <div class="page-hero-content">
+          <p class="hero-eyebrow"><span class="dot"></span> Client Portal</p>
+          <h1>Show<br /><em>Downloads</em></h1>
+          <p>Get the audio recording of your live event.</p>
+        </div>
+      </div>
+
+      <section class="inner-section">
+        <p class="section-tag">How It Works</p>
+        <h2 class="section-title">Three Simple Steps</h2>
+        <div class="steps-row">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h4>Find Your Event</h4>
+            <p>
+              Search by your name or booking reference. Your recording appears 3
+              days after the event.
+            </p>
+          </div>
+          <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h4>Pay ₦1,500</h4>
+            <p>
+              A one-time fee of ₦1,500 unlocks your audio recording. Pay
+              securely via Paystack — card, bank transfer or USSD.
+            </p>
+          </div>
+          <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h4>Download</h4>
+            <p>
+              Your private Google Drive link is revealed instantly. Tap download
+              — the file saves straight to your device.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="inner-section dark-bg">
+        <p class="section-tag">Find Your Recording</p>
+        <h2 class="section-title">Search Your Event</h2>
+        <div class="search-box">
+          <div class="search-row">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Enter your name or booking reference e.g. GV-ABC123..."
+              class="search-input"
+              onkeydown="if (event.key === 'Enter') searchEvent();"
+            />
+            <button class="btn-primary" onclick="searchEvent()">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      </section>
+
+      <section class="inner-section">
+        <p class="section-tag">Available Now</p>
+        <h2 class="section-title">Recent Recordings</h2>
+        <div class="recordings-grid" id="recordings-grid">
+          <!-- filled by JS from admin uploads -->
+        </div>
+      </section>
+
+      <!-- PAYSTACK PAYMENT MODAL -->
+      <div
+        id="dl-overlay"
+        style="
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.9);
+          z-index: 9999;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          backdrop-filter: blur(8px);
+        "
+      >
+        <div
+          id="dl-modal"
+          style="
+            background: #141414;
+            border: 1px solid rgba(200, 168, 75, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 440px;
+            width: 100%;
+            animation: heroIn 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+          "
+        >
+          <p
+            style="
+              font-size: 10px;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+              color: #c8a84b;
+              margin-bottom: 14px;
+            "
+          >
+            🔒 Secure Download Purchase
+          </p>
+          <h3
+            id="dl-title"
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 20px;
+              color: #f0ede8;
+              margin-bottom: 6px;
+              font-weight: 700;
+              line-height: 1.3;
+            "
+          ></h3>
+          <p
+            id="dl-meta"
+            style="font-size: 12px; color: #777; margin-bottom: 20px"
+          ></p>
+
+          <div
+            style="
+              background: #1a1a1a;
+              border: 1px solid rgba(255, 255, 255, 0.06);
+              padding: 14px 18px;
+              margin-bottom: 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-radius: 8px;
+            "
+          >
+            <span style="font-size: 13px; color: #777">Download fee</span>
+            <span
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 30px;
+                color: #c8a84b;
+                font-weight: 900;
+              "
+              >₦1,500</span
+            >
+          </div>
+
+          <div style="margin-bottom: 16px">
+            <label
+              style="
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: #777;
+                display: block;
+                margin-bottom: 6px;
+              "
+              >Your Email (download link sent here)</label
+            >
+            <input
+              type="email"
+              id="dl-email"
+              placeholder="your@email.com"
+              style="
+                width: 100%;
+                padding: 11px 14px;
+                background: #1f1f1f;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                color: #f0ede8;
+                font-family: &quot;Outfit&quot;, sans-serif;
+                font-size: 14px;
+                outline: none;
+                transition: border-color 0.3s;
+              "
+              onfocus="this.style.borderColor = '#c8a84b'"
+              onblur="this.style.borderColor = 'rgba(255,255,255,0.1)'"
+            />
+            <span
+              id="dl-email-err"
+              style="
+                font-size: 11px;
+                color: #e03e3e;
+                display: none;
+                margin-top: 4px;
+              "
+              >Please enter a valid email</span
+            >
+          </div>
+
+          <button
+            id="dl-pay-btn"
+            onclick="payWithPaystack()"
+            style="
+              width: 100%;
+              padding: 14px;
+              background: #c8a84b;
+              color: #080808;
+              font-family: &quot;Outfit&quot;, sans-serif;
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              margin-bottom: 10px;
+              transition: 0.3s;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+            "
+          >
+            <i class="fa-solid fa-lock"></i> Pay ₦1,500 with Paystack
+          </button>
+          <button
+            onclick="closeDlModal()"
+            style="
+              width: 100%;
+              padding: 11px;
+              background: transparent;
+              color: #777;
+              border: 1px solid rgba(255, 255, 255, 0.07);
+              border-radius: 8px;
+              font-family: &quot;Outfit&quot;, sans-serif;
+              font-size: 12px;
+              cursor: pointer;
+            "
+          >
+            Cancel
+          </button>
+          <p
+            style="
+              font-size: 10px;
+              color: #444;
+              text-align: center;
+              margin-top: 12px;
+            "
+          >
+            <i class="fa-solid fa-shield-halved" style="color: #3d9970"></i>
+            &nbsp;Secured by Paystack · Card, Bank Transfer & USSD accepted
+          </p>
+        </div>
+      </div>
+
+      <!-- DOWNLOAD SUCCESS MODAL -->
+      <div
+        id="dl-success-overlay"
+        style="
+          display: none;
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.9);
+          z-index: 9999;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          backdrop-filter: blur(8px);
+        "
+      >
+        <div
+          style="
+            background: #141414;
+            border: 1px solid rgba(61, 153, 112, 0.3);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            animation: heroIn 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+          "
+        >
+          <div
+            style="
+              width: 64px;
+              height: 64px;
+              border-radius: 50%;
+              background: rgba(61, 153, 112, 0.12);
+              border: 2px solid #3d9970;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 24px;
+              color: #3d9970;
+              margin: 0 auto 20px;
+              animation: pop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            "
+          >
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h3
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 24px;
+              color: #f0ede8;
+              margin-bottom: 8px;
+              font-weight: 700;
+            "
+          >
+            Payment Successful!
+          </h3>
+          <p
+            style="
+              font-size: 13px;
+              color: #777;
+              margin-bottom: 20px;
+              line-height: 1.7;
+            "
+          >
+            Your recording is ready. Click the button below to download — the
+            file will save directly to your device.
+          </p>
+          <a
+            id="dl-drive-link"
+            href="#"
+            target="_blank"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              padding: 14px 32px;
+              background: #c8a84b;
+              color: #080808;
+              font-family: &quot;Outfit&quot;, sans-serif;
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              border-radius: 8px;
+              text-decoration: none;
+              margin-bottom: 12px;
+              transition: 0.3s;
+            "
+          >
+            <i class="fa-solid fa-download"></i> Download My Recording
+          </a>
+          <p style="font-size: 11px; color: #555; margin-bottom: 20px">
+            Having trouble? The link has also been noted in your payment receipt
+            from Paystack.
+          </p>
+          <button
+            onclick="
+              document.getElementById('dl-success-overlay').style.display =
+                'none'
+            "
+            style="
+              padding: 10px 24px;
+              background: transparent;
+              color: #777;
+              border: 1px solid rgba(255, 255, 255, 0.07);
+              border-radius: 8px;
+              font-family: &quot;Outfit&quot;, sans-serif;
+              font-size: 12px;
+              cursor: pointer;
+            "
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════ PAGE: BOOKING ═══════ -->
+    <div id="page-booking" class="page">
+      <div class="page-hero short">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb1"></div>
+        </div>
+        <div class="page-hero-content">
+          <p class="hero-eyebrow">
+            <span class="dot"></span> Reserve Your Date
+          </p>
+          <h1>Book<br /><em>Gilgal Vibes</em></h1>
+          <p>Fill the form — we'll confirm within 24 hours.</p>
+        </div>
+      </div>
+
+      <section class="inner-section">
+        <div class="booking-layout">
+          <div class="booking-form-wrap">
+            <p class="section-tag">Booking Form</p>
+            <h2 class="section-title">Tell Us About Your Event</h2>
+            <form
+              class="booking-form"
+              id="booking-form"
+              onsubmit="submitBooking(event)"
+            >
+              <div class="form-row">
+                <div class="form-field">
+                  <label>Full Name *</label>
+                  <input
+                    type="text"
+                    id="b-name"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label>Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="b-phone"
+                    placeholder="+234 803 409 5659"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-field full">
+                <label>Email Address *</label>
+                <input
+                  type="email"
+                  id="b-email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label>Service Required *</label>
+                  <select id="b-service" required>
+                    <option value="">Select a service</option>
+                    <option value="sound-half-2sub3mon">
+                      Sound — Half Set (2 Subs + 3 Monitor)
+                    </option>
+                    <option value="sound-half-2mon1foh">
+                      Sound — Half Set (2 Monitor + 1 F.O.H)
+                    </option>
+                    <option value="sound-3monitor">
+                      Sound — Full Set (3 Monitor)
+                    </option>
+                    <option value="sound-3pillar4monitor">
+                      Sound — Full Set (3 Pillar, 4 Monitor)
+                    </option>
+                    <option value="sound-5monitor">
+                      Sound — Full Set (5 Monitor + Floor Monitor)
+                    </option>
+                    <option value="band-solo">
+                      Live Band — Solo / Duo Set
+                    </option>
+                    <option value="band-full">
+                      Live Band — Full Live Band
+                    </option>
+                    <option value="band-allnight">
+                      Live Band — All Night Coverage
+                    </option>
+                    <option value="both">Sound + Live Band (Combined)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label>Event Date *</label>
+                  <input type="date" id="b-date" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label>Event Type</label>
+                  <select id="b-type">
+                    <option value="">Select event type</option>
+                    <option>Wedding</option>
+                    <option>Birthday Party</option>
+                    <option>Corporate Event</option>
+                    <option>Church Program</option>
+                    <option>Concert</option>
+                    <option>Burial Ceremony</option>
+                    <option>Child Dedication</option>
+                    <option>Dinner Show</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label>Expected Guest Count</label>
+                  <input
+                    type="number"
+                    id="b-guests"
+                    placeholder="e.g. 200"
+                    min="1"
+                  />
+                </div>
+              </div>
+              <div class="form-field full">
+                <label>Venue / Location *</label>
+                <input
+                  type="text"
+                  id="b-venue"
+                  placeholder="Event venue and city"
+                  required
+                />
+              </div>
+              <div class="form-field full">
+                <label>Additional Notes</label>
+                <textarea
+                  id="b-notes"
+                  rows="4"
+                  placeholder="Any special requests, setup requirements, song requests..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary large full-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Booking Request
+              </button>
+            </form>
+            <div
+              id="booking-success"
+              class="booking-success"
+              style="display: none"
+            >
+              <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+              <h3>Booking Request Sent!</h3>
+              <p>
+                Thank you! We'll review your request and get back to you within
+                24 hours to confirm your date.
+              </p>
+              <p class="ref-num" id="booking-ref"></p>
+              <p style="font-size: 13px; color: var(--muted); margin-top: 16px">
+                Once confirmed, your service agreement will be available to view
+                and sign below.
+              </p>
+              <a
+                id="contract-link"
+                href="contract.html"
+                target="_blank"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  margin-top: 16px;
+                  padding: 11px 24px;
+                  background: var(--gold);
+                  color: var(--black);
+                  font-family: &quot;Outfit&quot;, sans-serif;
+                  font-size: 12px;
+                  font-weight: 700;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  border-radius: 2px;
+                  text-decoration: none;
+                  transition: 0.3s;
+                "
+              >
+                <i class="fa-solid fa-file-contract"></i> View Service Agreement
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-sidebar">
+            <div class="sidebar-card">
+              <h4>
+                <i class="fa-solid fa-circle-info"></i> What happens next?
+              </h4>
+              <div class="sidebar-steps">
+                <div class="s-step">
+                  <span>1</span>
+                  <p>
+                    We receive your request and check availability for your
+                    date.
+                  </p>
+                </div>
+                <div class="s-step">
+                  <span>2</span>
+                  <p>
+                    You get a confirmation call or WhatsApp within 24 hours.
+                  </p>
+                </div>
+                <div class="s-step">
+                  <span>3</span>
+                  <p>
+                    An 80% deposit secures your date. Balance collected before
+                    the gig begins.
+                  </p>
+                </div>
+                <div class="s-step">
+                  <span>4</span>
+                  <p>We show up, set up, and make your event unforgettable.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h4><i class="fa-brands fa-whatsapp"></i> Prefer WhatsApp?</h4>
+              <p>Send us a message directly and we'll respond fast.</p>
+              <a
+                href="https://wa.me/2348034095659"
+                target="_blank"
+                class="btn-whatsapp"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+            <div class="sidebar-card">
+              <h4><i class="fa-solid fa-calendar-days"></i> Availability</h4>
+              <p>
+                We're usually booked <strong>2–3 weeks</strong> in advance. Book
+                early to secure your preferred date.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ═══════ PAGE: CONTACT ═══════ -->
+    <div id="page-contact" class="page">
+      <div class="page-hero short">
+        <div class="hero-bg">
+          <div class="hero-grain"></div>
+          <div class="hero-orb orb1"></div>
+          <div class="hero-orb orb2"></div>
+        </div>
+        <div class="page-hero-content">
+          <p class="hero-eyebrow"><span class="dot"></span> Get In Touch</p>
+          <h1>Contact<br /><em>Us</em></h1>
+          <p>We're always available. Reach out anytime.</p>
+        </div>
+      </div>
+
+      <section class="inner-section">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p class="section-tag">Reach Us</p>
+            <h2 class="section-title">Let's Talk</h2>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h5>Phone</h5>
+                  <a href="tel:+2348034095659">+234 803 409 5659</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <a href="https://wa.me/2348034095659" target="_blank"
+                    >+234 803 409 5659</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h5>Email</h5>
+                  <a href="mailto:info@gilgalvibes.com">info@gilgalvibes.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h5>Based In</h5>
+                  <span>Lagos, Nigeria — Available Nationwide</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/adeniyi.okin"
+                target="_blank"
+                class="social-btn"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@gilgalvibesband"
+                target="_blank"
+                class="social-btn"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form
+              class="booking-form"
+              id="contact-form"
+              onsubmit="submitContact(event)"
+            >
+              <div class="form-row">
+                <div class="form-field">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    id="c-name"
+                    placeholder="Full name"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label>Phone / WhatsApp</label>
+                  <input type="tel" id="c-phone" placeholder="+234..." />
+                </div>
+              </div>
+              <div class="form-field full">
+                <label>Email</label>
+                <input
+                  type="email"
+                  id="c-email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="form-field full">
+                <label>Subject</label>
+                <input
+                  type="text"
+                  id="c-subject"
+                  placeholder="What is this about?"
+                />
+              </div>
+              <div class="form-field full">
+                <label>Message</label>
+                <textarea
+                  id="c-message"
+                  rows="5"
+                  placeholder="Tell us what you need..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary large full-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+            <div
+              id="contact-success"
+              class="booking-success"
+              style="display: none"
+            >
+              <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+              <h3>Message Received!</h3>
+              <p>
+                We'll get back to you within a few hours. Thank you for reaching
+                out to Gilgal Vibes!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-g">G</span>ILGAL <span class="logo-v">VIBES</span>
+          </div>
+          <p>
+            Premium sound rental and live band services across Nigeria. Making
+            every event unforgettable since day one.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/adeniyi.okin" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@gilgalvibesband" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#" onclick="showPage('sound')">Sound Rental</a></li>
+            <li><a href="#" onclick="showPage('band')">Live Band</a></li>
+            <li><a href="#" onclick="showPage('downloads')">Downloads</a></li>
+            <li><a href="#" onclick="showPage('booking')">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="tel:+2348034095659">+234 803 409 5659</a></li>
+            <li>
+              <a href="mailto:okingilgalvibes@gmail.com"
+                >info@gilgalvibes.com</a
+              >
+            </li>
+            <li><span>Lagos, Nigeria</span></li>
+            <li>
+              <a href="https://wa.me/2348034095659" target="_blank"
+                >WhatsApp Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gilgal Vibes Incorporated. All rights reserved.</p>
+        <p>Built with ❤️ for good music and great events.</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
